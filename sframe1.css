@@ -1,0 +1,46 @@
+* {
+    font-family: Bahnschrift;
+    }
+    
+    .header {
+    padding: 12px 16px;
+    background: rgb(234,241,250);
+    }
+    
+    .header img {
+    width: 50px;
+    padding: 2.5px 10px 0px 0px;
+    }
+    .header p {
+    padding: 0px 0px 0px 0px;
+    font-size: 35px;
+    font-weight: 750;
+    color: rgb(31,73,125);
+    }
+    
+    .container {
+    padding: 0 0 20px 0;
+    }
+    
+    table {
+    background: rgb(197,217,241);
+    }
+    
+    td {
+    width: 200px;
+    height: 30px;
+    padding: 5px;
+    vertical-align: top;
+    font-weight: 550;
+    border: solid rgb(31,73,125);
+    border-width: 1px 0 0 1px;
+    }
+    
+    .footer {
+    padding: 10px 15px;
+    background: rgb(22,54,92);
+    }
+    
+    .footer {
+    color: white;
+    }

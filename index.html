@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--navbar-->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about_me">About Me</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <h1>Hi, Jose Here</h1>
+        <p>A front-end developer in training with a dream to change the world</p>
+        <p>Love coding, photography and design</p>
+    </section>
+
+    <section id="about_me">
+        <div class="desc">
+            <!--foto: img-->
+            <div class="big-img">
+                <img src="./Assets/self.jpg" alt="My photo">
+            </div>
+            <!--deskripsi: p-->
+            <p>Hello, my name is Jose Gabriel Thendito and
+            currently studying as a college student.
+            Derived from my passion towards coding,
+            I started learning how to make a website
+            to fulfill my curiosity. Using the internet
+            and online lectures, I continuously
+            improve myself to make a better website.
+            </p>
+        </div>
+
+        <!--pendidikan: tabel-->
+        <div class="study">
+            <h4>Studies</h4>
+        <table>
+            <tr>
+                <th id="col1">Year</th>
+                <th id="col2">Study</th>
+            </tr>
+            <tr>
+                <td id="col1">2016 - 2019</td>
+                <td id="col2">Tunas Bangsa Junior High School</td>
+            </tr>
+            <tr>
+                <td id="col1">2019 - 2022</td>
+                <td id="col2">Tunas Bangsa Senior High School<br><span id="major">Science Major</span></td>
+            </tr>
+            <tr>
+                <td id="col1">2022 - Now</td>
+                <td id="col2">Bina Nusantara University<br><span id="major">Computer Science and Mathematics</span></td>
+            </tr>
+        </table>
+        </div>
+
+        <!--bahasa: list-->
+        <div class="language">
+            <h4>Proficient in</h4>
+            <ul>
+                <li>C</li>
+                <li>Phyton</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+            </ul>
+        </div>
+    </section>
+
+    <!--projects-->
+    <section id="portfolio">
+        <h4>Some of my previous works</h4>
+        <div class="display">
+            <img src="./Assets/SS1.png" alt="">
+            <img src="./Assets/SS2.png" alt="">
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="footer">
+            <!--to be centered alone-->
+            <h4>Let's keep in touch</h4>
+    
+            <span class="grid">
+                <div class="contact_me">
+                    <!--contact me-->
+                    <h3>Find me here</h3>
+                    <div class="contact">
+                        <img src="./Assets/IG.png" alt="Instagram Logo">
+                        <p>@joseg.thendito</p>
+                    </div>
+                    <div class="contact">
+                        <img src="./Assets/LN.jpeg" alt="Line Logo">
+                        <p>seventhJ</p>
+                    </div>
+                    <div class="contact">
+                        <img src="./Assets/DC.png" alt="Discord Logo">
+                        <p>JOSEJOSEJOSE#5078</p>
+                    </div>
+                    <div class="contact">
+                        <img src="./Assets/LI.jpeg" alt="LinkedIn Logo">
+                        <p>Jose Thendito</p>
+                    </div>
+                    <div class="contact">
+                        <img src="./Assets/EM.jpeg" alt="Mail Logo">
+                        <p>jose.thendito@gmail.com</p>
+                    </div>
+                </div>
+                
+                <div class="input">
+                    <!--or share your opinion here: formulir-->
+                    <h3>or share your opinion</h3>
+                    <div class="form">
+                        <form action="">
+                            <table>
+                                <tr>
+                                    <td>Name:</td>
+                                    <td><input id="name" type="text"></td>
+                                </tr>
+                                <tr>
+                                    <td>Email:</td>
+                                    <td><input id="email" type="email"></td>
+                                </tr>
+                                <tr>
+                                    <td>LinkedIn:</td>
+                                    <td><input id="linkedIn" type="text"></td>
+                                </tr>
+                                <tr>
+                                    <td>Comment:</td>
+                                    <td><textarea name="Comment" id="comment" cols="30" rows="2"></textarea></td>
+                                </tr>
+                            </table>
+                            <button type="submit" value="Sumbit">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </span>
+        </div>
+    </section>
+    <!--footer-->
+</body>
+</html>

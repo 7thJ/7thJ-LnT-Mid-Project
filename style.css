@@ -1,0 +1,494 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Lato', sans-serif;
+}
+
+nav {
+    width: 100%;
+    padding: 0px 40px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    height: 50px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 15px 30px 16px 30px;
+    display: flex;
+    align-content: center;
+}
+
+nav li {
+    transition: 0.2s;
+}
+
+nav li:hover {
+    background-color: gray;
+}
+
+#home {
+    background-image: url(./Assets/bg-img1.jpg);
+    background-repeat: none;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-content: left;
+    text-align: left;
+    gap: 12px;
+    padding: 120px 85px;
+    color: white;
+}
+
+#home h1 {
+    font-weight: 300;
+    font-size: 85px;
+    animation: welcome 2.5s ease-out;
+}
+
+#home p {
+    padding-left: 7px;
+    font-size: 15px;
+    animation: welcome 2.5s ease-out;
+}
+
+.big-img img {
+    height: 150px;
+    clip-path: circle(50%);
+}
+
+#about_me {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    gap: 40px;
+    padding: 70px 60px 100px 60px;
+    color: white;
+}
+
+#about_me .desc {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    width: 700px;
+    gap: 30px;
+}
+
+#about_me .desc p {
+    font-weight: 300;
+    font-size: large;
+    padding: 15px;
+}
+
+h4 {
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+#about_me h4 {
+    margin-bottom: 20px;
+}
+ 
+.study table {
+    background: rgb(77, 77, 77);
+    border-collapse: collapse;
+}
+    
+.study th {
+    background:rgb(42, 42, 42)
+}
+
+.study th, .study td {
+    height: 30px;
+    padding: 5px;
+    vertical-align: top;
+    border: 1px solid black;
+}
+
+#col1 {
+    width: 245px;
+}
+
+#col2 {
+    width: 445px;
+}
+
+#major {
+    color:rgb(214, 214, 214);
+    font-size: 12px;
+}
+
+.language ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    width: 700px;
+    gap: 20px;
+}
+
+.language li {
+    font-size: 15px;
+    font-weight: 700;
+    font-style: italic;
+    width: 120px;
+    height: 35px;
+    background: white;
+    border-radius: 17px;
+    color: black;
+    display: flex;
+    padding: 7px 0;
+    justify-content: center;
+}
+
+.language li:hover {
+    animation: hstretch 1s 1 ease-in-out;
+}
+
+#portfolio {
+    background-image: url(./Assets/bg-img2.jpg);
+    background-repeat: none;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    gap: 20px;
+    padding: 100px 40px;
+    color: white;
+}
+
+#portfolio img {
+    box-shadow: 3px 3px 6px rgba(0,0,0,0.5),
+                0 0 3px rgba(0,0,0,0.5);
+    margin: 15px;
+    height: 200px;
+    transition: 0.5s;
+}
+
+#portfolio img:hover {
+    transform: scale(105%);
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    padding: 40px 120px;
+}
+
+.footer h4 {
+    font-size: 30px;
+    margin-bottom: 25px;;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    gap: 100px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.contact_me h3 {
+    padding-left: 4px;
+}
+
+.contact img {
+    height: 30px;
+}
+
+.contact p {
+    padding-top: 4px;
+}
+
+.form table {
+    align-content: flex-start;
+}
+
+.form td {
+    padding: 2px;
+}
+
+.form input, .form textarea {
+    width: 250px;
+    border-radius: 5px;
+    border: none;
+}
+
+button {
+    width: 200px;
+    height: 30px;
+    border-radius: 15px;
+    font-weight: 300;
+}
+
+@keyframes welcome {
+    0%{
+        opacity: 0;
+        transform: translate(0, 20px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes hstretch {
+    0%{
+        transform: scale(100%, 100%);
+    }
+    50%{
+        transform: scale(110%, 102%);
+    }
+    100%{
+        transform: scale(100%, 100%);
+    }
+}
+
+@media screen and (max-width: 900px) {
+    #home {
+        background-size: cover;
+        background-repeat: none;
+        height: 50vh;
+        padding: 60px 20px;
+    }
+
+    #home h1 {
+        font-size: 50px;
+    }
+
+    #home p
+ {
+    font-size: 13px;
+ }
+    #about_me .desc {
+        width: 400px;
+    }
+
+    .big-img img{
+        height: 90px;
+    }
+
+    #about_me .desc p {
+        font-size: 10px;
+    }
+
+    h4 {
+        font-size: 28px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .study th, .study td {
+        font-size: smaller;
+    }
+
+    #col1 {
+        width: 135px;
+    }
+    
+    #col2 {
+        width: 255px;
+    }    
+
+    .language ul {
+        width: 400px;
+        gap: 14px;
+    }
+    
+    .language li {
+        font-size: 12px;
+        font-weight: 700;
+        font-style: italic;
+        width: 85px;
+        height: 30px;
+        background: white;
+        border-radius: 15px;
+        color: black;
+        display: flex;
+        padding: 7px 0;
+        justify-content: center;
+    }
+
+    #portfolio {
+        display: grid;
+        grid-template-areas: none;
+    }
+    
+    #portfolio img {
+        height: 150px;
+        justify-content: center;
+    }
+
+    .footer {
+        padding: 30px 100px;
+        font-size: smaller;
+    }
+    
+    .footer h4 {
+        font-size: 22px;
+    }
+    
+    .grid {
+        gap:1px;
+        display: grid;
+        grid-template-columns: none;
+        grid-template-rows: 50% 50%;
+        height: 400px;
+    }
+
+    button {
+        width: 155px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    nav {
+        height: 30px;
+    }
+    
+    nav a {
+        margin: 8px 10px 7px 10px;
+    }
+
+    nav li {
+        font-size: x-small;
+    }
+    
+    #home {
+        background-size: cover;
+        background-repeat: none;
+        height: 40vh;
+        padding: 22px 12px;
+        gap: 5px;
+    }
+
+    #home h1 {
+        font-size: 25px;
+    }
+
+    #home p
+    {
+        padding-left: 3px;;
+        font-size: 9px;
+    }
+    
+    #about_me .desc {
+        width: 250px;
+    }
+
+    .big-img img{
+        height: 60px;
+    }
+
+    #about_me .desc p {
+        font-size: 8px;
+        gap: 2px;
+        padding: 1px;
+    }
+
+    h4 {
+        font-size: 17px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .study th, .study td {
+        font-size: xx-small;
+    }
+
+    #major {
+        font-size: smaller;
+    }
+
+    #col1 {
+        width: 85px;
+    }
+    
+    #col2 {
+        width: 120px;
+    }    
+
+    .language ul {
+        width: 250px;
+        gap: 10px;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .language li {
+        font-size: 9px;
+        font-weight: 700;
+        font-style: italic;
+        width: 85px;
+        height: 20px;
+        background: white;
+        border-radius: 15px;
+        color: black;
+        display: flex;
+        flex-direction: row;
+        padding: 4px 0;
+        justify-content: center;
+    }
+
+    #portfolio {
+        display: grid;
+        grid-template-areas: none;
+    }
+    
+    #portfolio img {
+        height: 100px;
+        justify-content: center;
+    }
+
+    .contact img {
+        height: 20px;
+    }
+
+    .footer {
+        padding: 30px 70px;
+        font-size: 10px;
+    }
+    
+    .footer h4 {
+        font-size: 16px;
+    }
+    
+    .grid {
+        gap:1px;
+        display: grid;
+        grid-template-columns: none;
+        grid-template-rows: auto auto;
+        height: 300px;
+    }
+
+    .form input, .form textarea {
+        width: 150px;
+    }
+
+    button {
+        width: 100px;
+        height:20px;
+        font-size: 8px;
+    }
+}
